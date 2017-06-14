@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-main">
+            <div *ngFor="let post of posts">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                        <p>Post: {{ post.title }}</p>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <p>Text: {{ post.body }}</p>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a
+                                [routerLink]="['/post/', post.id]"
+                                class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            View Comments
+                        </a>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                                (click)="goBack()">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

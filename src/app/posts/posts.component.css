@@ -1,0 +1,17 @@
+/*card styles*/
+
+.demo-card-square.mdl-card {
+    min-width: 320px;
+    min-height: 320px;
+    margin: 20px auto;
+}
+.demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: #3E4EB8;
+}
+
+
+.demo-card-square > .mdl-card__title {
+    align-items: flex-start;
+    display: flex;
+}

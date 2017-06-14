@@ -1,0 +1,13 @@
+/* Wide card with share menu button */
+
+ .demo-card-wide.mdl-card {
+     min-width: 512px;
+ }
+.demo-card-wide > .mdl-card__title {
+    color: #fff;
+    min-height: 176px;
+    background: url('https://getmdl.io/assets/demos/welcome_card.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+    color: #fff;
+}
